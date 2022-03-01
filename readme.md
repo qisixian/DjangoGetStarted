@@ -29,6 +29,20 @@ python manage.py startapp users
 python manage.py makemigrations
 python manage.py migrate
 ```
+Django OAuth Toolkit
+```bash
+pip install django-oauth-toolkit
+pip freeze > requirements.txt
+# after Add oauth2_provider to INSTALLED_APPS in settings.py:
+python manage.py migrate
+```
+Create a user
+```bash
+python manage.py createsuperuser
+```
+Username: admin
+Email address: qisixian1998@gmail.com
+Password: 123456
 
 
 ## Run Project
