@@ -21,7 +21,14 @@ init git
 git init
 git add all
 ```
-
+set up a custom user model (This model behaves identically to the default user model, but you’ll be able to customize it if need)
+```bash
+python manage.py startapp users
+# after add servral code
+# 下面两个命令跟从代码同步数据库结构变更有关
+python manage.py makemigrations
+python manage.py migrate
+```
 
 
 ## Run Project
@@ -29,4 +36,9 @@ git add all
 # python3 -m venv venv
 # source venv/bin/activate
 pip install -r requirements.txt
+python manage.py runserver
 ```
+
+
+## Reference:
+https://django-oauth-toolkit.readthedocs.io/en/latest/getting_started.html
